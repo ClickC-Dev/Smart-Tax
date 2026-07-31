@@ -1,0 +1,16 @@
+<!-- @dsCard group="Components" viewport="700x140" name="Tabs" subtitle="Underline tabs, gold active indicator" -->
+<!DOCTYPE html><html><head><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--surface-page);font-family:var(--font-body)}#root{padding:20px}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Tabs } = window.SmartTaxDesignSystem_5b7735;
+function App(){
+  const [t,setT] = React.useState('mes');
+  return <Tabs items={[{value:'mes',label:'Este mês'},{value:'ano',label:'Este ano'},{value:'hist',label:'Histórico'}]} active={t} onChange={setT} />;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

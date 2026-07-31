@@ -1,0 +1,31 @@
+<!-- @dsCard group="Client Dashboard" viewport="1200x760" name="Client dashboard" subtitle="Online accounting portal — click through Início, Notas, Declarações, Config" -->
+<!DOCTYPE html><html><head><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;font-family:var(--font-body);background:var(--surface-page)}#root{display:flex;height:760px;overflow:hidden}a{color:var(--text-link)}a:hover{color:var(--navy-800)}</style>
+</head><body><div id="root"></div>
+<script type="text/babel" src="Sidebar.jsx"></script>
+<script type="text/babel" src="TopBar.jsx"></script>
+<script type="text/babel" src="HomeScreen.jsx"></script>
+<script type="text/babel" src="DocsScreen.jsx"></script>
+<script type="text/babel" src="DeclaracoesScreen.jsx"></script>
+<script type="text/babel" src="ConfigScreen.jsx"></script>
+<script type="text/babel">
+function App(){
+  const [nav,setNav] = React.useState('home');
+  React.useEffect(()=>{ lucide.createIcons(); });
+  const titles = { home:['Início','Visão geral da sua empresa'], docs:['Notas & Documentos','Envie e acompanhe seus documentos fiscais'], declaracoes:['Declarações','Guias e obrigações fiscais'], relatorios:['Relatórios','Em breve'], config:['Configurações','Dados da empresa e preferências'] };
+  const screens = { home:<window.HomeScreen/>, docs:<window.DocsScreen/>, declaracoes:<window.DeclaracoesScreen/>, relatorios:<div style={{padding:32,color:'var(--text-muted)'}}>Relatórios detalhados em breve.</div>, config:<window.ConfigScreen/> };
+  return (<>
+    <window.Sidebar active={nav} onNav={setNav} />
+    <div style={{flex:1,display:'flex',flexDirection:'column',overflow:'auto'}}>
+      <window.TopBar title={titles[nav][0]} subtitle={titles[nav][1]} />
+      {screens[nav]}
+    </div>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

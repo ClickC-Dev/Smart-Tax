@@ -1,0 +1,28 @@
+<!-- @dsCard group="Components" viewport="700x520" name="Forms" subtitle="Input, Select, Checkbox, Radio, Switch" -->
+<!DOCTYPE html><html><head><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--surface-page);font-family:var(--font-body)}#root{padding:20px;display:flex;flex-direction:column;gap:16px;max-width:340px}.row{display:flex;gap:20px}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Input, Select, Checkbox, Radio, Switch } = window.SmartTaxDesignSystem_5b7735;
+function App(){
+  const [c,setC] = React.useState(true);
+  const [r,setR] = React.useState('mensal');
+  const [s,setS] = React.useState(true);
+  return (<>
+    <Input label="CNPJ" placeholder="00.000.000/0001-00" />
+    <Input label="E-mail" error="Informe um e-mail válido" />
+    <Select label="Regime tributário" options={[{value:'simples',label:'Simples Nacional'},{value:'presumido',label:'Lucro Presumido'}]} />
+    <Checkbox label="Recebi as notas fiscais" checked={c} onChange={e=>setC(e.target.checked)} />
+    <div className="row">
+      <Radio name="p" label="Mensal" checked={r==='mensal'} onChange={()=>setR('mensal')} />
+      <Radio name="p" label="Anual" checked={r==='anual'} onChange={()=>setR('anual')} />
+    </div>
+    <Switch label="Notificar por e-mail" checked={s} onChange={e=>setS(e.target.checked)} />
+  </>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

@@ -1,0 +1,65 @@
+:root{
+/* base — navy (from logo background) */
+--navy-950:#0d181f;
+--navy-900:#122029;
+--navy-800:#1c2e38;
+--navy-700:#24404d;
+--navy-600:#31586a;
+--navy-500:#3f7188;
+
+/* base — gold/bronze (from logo mark) */
+--gold-900:#5a3a20;
+--gold-800:#754a28;
+--gold-700:#8f5f34;
+--gold-600:#a97c4f;
+--gold-500:#c39b6c;
+--gold-400:#d4b896;
+--gold-300:#e3d0b6;
+--gold-100:#f5ede0;
+
+/* neutrals — for UI surfaces (dashboard/light contexts) */
+--neutral-0:#ffffff;
+--neutral-50:#f7f6f4;
+--neutral-100:#efece7;
+--neutral-200:#e2ddd5;
+--neutral-300:#c9c1b4;
+--neutral-400:#a89d8c;
+--neutral-500:#847968;
+--neutral-600:#615a4d;
+--neutral-700:#453f36;
+--neutral-800:#2c2822;
+--neutral-900:#1a1712;
+
+/* semantic */
+--success-500:#3f7d5a;
+--success-100:#e2f0e8;
+--warning-500:#b5822c;
+--warning-100:#f7ecd8;
+--danger-500:#a4402f;
+--danger-100:#f6e2de;
+--info-500:var(--navy-500);
+--info-100:#e6eef1;
+
+/* semantic aliases */
+--surface-page:var(--neutral-50);
+--surface-card:var(--neutral-0);
+--surface-inverse:var(--navy-800);
+--surface-sunken:var(--neutral-100);
+--surface-brand:var(--navy-800);
+
+--border-subtle:var(--neutral-200);
+--border-default:var(--neutral-300);
+--border-strong:var(--navy-800);
+
+--text-primary:var(--neutral-900);
+--text-secondary:var(--neutral-600);
+--text-muted:var(--neutral-500);
+--text-inverse:var(--neutral-0);
+--text-on-brand-muted:var(--gold-400);
+--text-link:var(--navy-600);
+
+--accent-primary:var(--navy-800);
+--accent-primary-hover:var(--navy-900);
+--accent-gold:var(--gold-600);
+--accent-gold-hover:var(--gold-700);
+}
