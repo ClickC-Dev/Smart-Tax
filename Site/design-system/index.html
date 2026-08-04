@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Tax — Design System</title>
+<meta name="description" content="Design system da Smart Tax Contabilidade: cores, tipografia, espaçamento, componentes e os dois produtos (portal do cliente e site institucional).">
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/presentation.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="container">
+    <a href="#top" class="topnav-brand"><img src="assets/logo-mark.png" alt=""> Smart Tax<span class="topnav-sub"> · Design System</span></a>
+    <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+    <div class="topnav-links">
+      <a href="#brand">Marca</a>
+      <a href="#colors">Cores</a>
+      <a href="#type">Tipografia</a>
+      <a href="#spacing">Espaçamento</a>
+      <a href="#components">Componentes</a>
+      <a href="#products">Produtos</a>
+    </div>
+    <a class="topnav-cta" href="https://github.com/ClickC-Dev/Smart-Tax" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Design system · Smart Tax Contabilidade</p>
+      <h1>Precisão financeira,<br>traduzida em <em>interface</em>.</h1>
+      <p class="lead">
+        Um sistema visual único — navy institucional, acabamento em bronze e tipografia
+        confiante — para o portal do cliente e o site institucional da Smart Tax.
+        Tom formal, direto, sem excessos: contabilidade de alto padrão para PJ e MEI.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#components">Explorar componentes</a>
+        <a class="btn btn-outline" href="#products">Ver produtos</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>13</b><span>Componentes</span></div>
+        <div><b>2</b><span>Produtos modelados</span></div>
+        <div><b>4</b><span>Escalas de cor</span></div>
+        <div><b>2</b><span>Famílias tipográficas</span></div>
+      </div>
+    </div>
+    <div class="hero-mark">
+      <img src="assets/logo-full.png" alt="Smart Tax">
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" id="brand">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Fundamentos</p>
+        <h2>Marca &amp; voz</h2>
+        <p>A logomarca é a única fonte original do sistema — dela vieram a paleta, a tipografia
+          de destaque e o motivo do rótulo com letras espaçadas. Tom de voz formal e consultivo,
+          em segunda pessoa, sem emojis.</p>
+      </div>
+      <div class="card-grid">
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Lockup da marca</h3><p>Sobre navy — não recolorir nem redesenhar</p></div>
+            <a href="guidelines/brand-logo.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="280"><iframe src="guidelines/brand-logo.card.html" loading="lazy" title="Logo lockup"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Símbolo isolado</h3><p>Para aplicações pequenas / quadradas</p></div>
+            <a href="guidelines/brand-mark.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="200"><iframe src="guidelines/brand-mark.card.html" loading="lazy" title="Logo mark"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Iconografia</h3><p>Lucide (CDN) — traço fino, substituição sinalizada</p></div>
+            <a href="guidelines/iconography.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="150"><iframe src="guidelines/iconography.card.html" loading="lazy" title="Iconography"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Voz &amp; tom</h3><p>Formal, tranquilizadora, segunda pessoa</p></div>
+            <a href="guidelines/voice-tone.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="220"><iframe src="guidelines/voice-tone.card.html" loading="lazy" title="Voice and tone"></iframe></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="colors">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Fundamentos</p>
+        <h2>Cores</h2>
+        <p>Navy profundo (amostrado do fundo da logo) como superfície dominante e bronze/dourado
+          como acento único — reservado para a ação de maior prioridade em cada tela. Neutros
+          quentes carregam o modo claro do dashboard.</p>
+      </div>
+      <div class="card-grid">
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Escala navy</h3><p>Marca primária — fundos e texto sobre claro</p></div>
+            <a href="guidelines/colors-navy.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="180"><iframe src="guidelines/colors-navy.card.html" loading="lazy" title="Navy scale"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Escala gold / bronze</h3><p>Acento — do mark de veio de madeira</p></div>
+            <a href="guidelines/colors-gold.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="180"><iframe src="guidelines/colors-gold.card.html" loading="lazy" title="Gold scale"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Escala neutra</h3><p>Cinzas quentes para superfícies e texto de UI</p></div>
+            <a href="guidelines/colors-neutral.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="150"><iframe src="guidelines/colors-neutral.card.html" loading="lazy" title="Neutral scale"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Status semântico</h3><p>Sucesso, alerta, erro, informação</p></div>
+            <a href="guidelines/colors-semantic.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="120"><iframe src="guidelines/colors-semantic.card.html" loading="lazy" title="Semantic colors"></iframe></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="type">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Fundamentos</p>
+        <h2>Tipografia</h2>
+        <p><b>Manrope</b> (extrabold) para display e títulos — geométrica e confiante, ecoando o
+          wordmark. <b>Inter</b> para corpo de texto, rótulos e dados de tabela. Um rótulo
+          tracejado em maiúsculas cita diretamente o subtítulo "CONTABILIDADE" da logo.</p>
+      </div>
+      <div class="card-grid">
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Escala display / heading</h3><p>Manrope — geométrica e ousada</p></div>
+            <a href="guidelines/type-display.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="260"><iframe src="guidelines/type-display.card.html" loading="lazy" title="Display type"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Escala body / label</h3><p>Inter — corpo de texto, rótulos, legendas</p></div>
+            <a href="guidelines/type-body.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="220"><iframe src="guidelines/type-body.card.html" loading="lazy" title="Body type"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Rótulo tracejado</h3><p>Motivo herdado do wordmark da logo</p></div>
+            <a href="guidelines/type-tracked-label.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="140"><iframe src="guidelines/type-tracked-label.card.html" loading="lazy" title="Tracked label"></iframe></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="spacing">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Fundamentos</p>
+        <h2>Espaçamento &amp; elevação</h2>
+        <p>Grade de 4px, raios pequenos e consistentes (4–20px) e sombras suaves com tom navy —
+          nada de brilho ou elevação exagerada fora de modais.</p>
+      </div>
+      <div class="card-grid">
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Escala de espaçamento</h3><p>Grade base de 4px, de 4 a 128px</p></div>
+            <a href="guidelines/spacing-scale.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="160"><iframe src="guidelines/spacing-scale.card.html" loading="lazy" title="Spacing scale"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Raios &amp; sombras</h3><p>Arredondamento de cantos e elevação em uso</p></div>
+            <a href="guidelines/radii-shadows.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="180"><iframe src="guidelines/radii-shadows.card.html" loading="lazy" title="Radii and shadows"></iframe></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="components">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Biblioteca</p>
+        <h2>Componentes</h2>
+        <p>Conjunto padrão dimensionado para os dois produtos: botões, formulários, exibição de
+          dados, navegação e feedback. Todos em React, prontos para uso em produção.</p>
+      </div>
+      <div class="card-grid cols-2">
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Buttons</h3><p>Primário, gold, secundário, ghost, tamanhos, desabilitado</p></div>
+            <a href="components/buttons/buttons.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="300"><iframe src="components/buttons/buttons.card.html" loading="lazy" title="Buttons"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Forms</h3><p>Input, Select, Checkbox, Radio, Switch</p></div>
+            <a href="components/forms/forms.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="520"><iframe src="components/forms/forms.card.html" loading="lazy" title="Forms"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Data Display</h3><p>Card, Badge, Tag</p></div>
+            <a href="components/data-display/data-display.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="360"><iframe src="components/data-display/data-display.card.html" loading="lazy" title="Data display"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Feedback</h3><p>Dialog, Toast, Tooltip</p></div>
+            <a href="components/feedback/feedback.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="420"><iframe src="components/feedback/feedback.card.html" loading="lazy" title="Feedback"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Tabs</h3><p>Abas sublinhadas, indicador ativo em gold</p></div>
+            <a href="components/navigation/navigation.card.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="700" data-vh="140"><iframe src="components/navigation/navigation.card.html" loading="lazy" title="Navigation"></iframe></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Aplicado</p>
+        <h2>Produtos</h2>
+        <p>O sistema em ação nos dois produtos modelados: o portal do cliente e o site
+          institucional. Clique para navegar dentro de cada protótipo.</p>
+      </div>
+      <div class="card-grid full">
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Portal do cliente</h3><p>Início, Notas &amp; Documentos, Declarações, Configurações</p></div>
+            <a href="ui_kits/dashboard/index.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="1200" data-vh="760"><iframe src="ui_kits/dashboard/index.html" loading="lazy" title="Client dashboard"></iframe></div>
+        </article>
+        <article class="ds-card">
+          <div class="ds-card-head">
+            <div><h3>Site institucional</h3><p>Header, hero, serviços, planos, footer</p></div>
+            <a href="ui_kits/website/index.html" target="_blank" rel="noopener">Abrir ↗</a>
+          </div>
+          <div class="card-frame" data-vw="1200" data-vh="760"><iframe src="ui_kits/website/index.html" loading="lazy" title="Marketing website"></iframe></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Smart Tax Design System — construído a partir da logomarca da marca. Fontes e ícones são substituições sinalizadas (Manrope/Inter via Google Fonts, Lucide).</p>
+    <p><a href="https://github.com/ClickC-Dev/Smart-Tax" target="_blank" rel="noopener">github.com/ClickC-Dev/Smart-Tax</a></p>
+  </div>
+</footer>
+
+<script src="assets/presentation.js"></script>
+</body>
+</html>

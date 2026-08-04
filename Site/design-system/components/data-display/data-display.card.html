@@ -1,0 +1,30 @@
+<!-- @dsCard group="Components" viewport="700x360" name="Data Display" subtitle="Card, Badge, Tag" -->
+<!DOCTYPE html><html><head><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--surface-page);font-family:var(--font-body)}#root{padding:20px;display:flex;flex-direction:column;gap:16px}.row{display:flex;gap:10px;flex-wrap:wrap}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Card, Badge, Tag } = window.SmartTaxDesignSystem_5b7735;
+function App(){
+  return (<>
+    <Card style={{maxWidth:320}}>
+      <div style={{fontSize:'var(--text-body-sm)',color:'var(--text-muted)'}}>Faturamento do mês</div>
+      <div style={{fontSize:'var(--text-display-sm)',fontFamily:'var(--font-display)',fontWeight:800,color:'var(--text-primary)',marginTop:4}}>R$ 48.200,00</div>
+    </Card>
+    <div className="row">
+      <Badge tone="success">Em dia</Badge>
+      <Badge tone="warning">Pendente</Badge>
+      <Badge tone="danger">Atrasado</Badge>
+      <Badge tone="gold">Premium</Badge>
+    </div>
+    <div className="row">
+      <Tag onRemove={()=>{}}>Notas de março</Tag>
+      <Tag onRemove={()=>{}}>PJ</Tag>
+    </div>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>
