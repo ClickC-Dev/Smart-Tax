@@ -1,0 +1,1 @@
+import{e as c,q as s,o as t,E as a,s as _}from"./BPhOmExG.js";import{_ as r}from"./DlAUqK2U.js";const p=c({__name:"index",props:{icon:{default:()=>({})},name:{default:""}},setup(o){const n=o,{icon:e}=n;return(m,f)=>(t(),s(a(_(e)),{class:"nuxt-icon"}))}}),d=r(p,[["__scopeId","data-v-03cc693f"]]);export{d as _};

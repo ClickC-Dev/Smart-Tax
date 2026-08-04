@@ -1,0 +1,1 @@
+import{_ as r}from"./amhO88eJ.js";import{e as t,q as o,o as a}from"./BPhOmExG.js";import"./DGZTbvmb.js";import"./BI7_RvYE.js";const f=t({name:"AbrirEmpresa",__name:"index",setup(m){return(n,_)=>{const e=r;return a(),o(e,{slug:"index"})}}});export{f as default};

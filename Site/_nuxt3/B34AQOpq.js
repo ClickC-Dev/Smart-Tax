@@ -1,0 +1,1 @@
+import{r as t,b as r,d,f as s}from"./BPhOmExG.js";const u=()=>{const n=t(!1),o=t(!0),e=()=>{if(typeof window>"u")return;const i=window.innerWidth;n.value=i<=1024,o.value=i>1024};return r(()=>{e(),window.addEventListener("resize",e)}),d(()=>{typeof window<"u"&&window.removeEventListener("resize",e)}),{isMobile:s(n),isDesktop:s(o)}};export{u};
