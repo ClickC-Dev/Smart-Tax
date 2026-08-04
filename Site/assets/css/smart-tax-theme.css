@@ -67,3 +67,70 @@ h1, h2, h3, h4, h5, h6,
 a{ color:var(--st-navy-800); }
 a:hover{ color:var(--st-gold-700); }
 
+/* --- Header --- */
+.main-header{
+  background:var(--st-navy-800) !important;
+  box-shadow:0 1px 0 rgba(255,255,255,0.08);
+}
+.main-header .nav-link,
+.main-header .dropdown-toggle-mobile,
+.main-header .dropdown-toggle-mobile span,
+.main-header__navbar-brand,
+.main-header a.atom-link:not(.atom-button__button)>span{
+  color:rgba(255,255,255,0.85) !important;
+}
+.main-header .navbar-menu__icon,
+.main-header .navbar-menu__icon:before,
+.main-header .navbar-menu__icon:after{
+  background-color:#fff !important;
+}
+.main-header .dropdown-menu{
+  background:#fff;
+  border-radius:var(--radius-md, 10px);
+}
+.main-header .dropdown-menu .dropdown-item,
+.main-header .dropdown-menu-group__title{
+  color:var(--st-navy-800) !important;
+}
+.main-header__navbar-brand img{
+  content:url('/assets/img/logo-mark.png');
+  height:32px !important;
+  width:32px !important;
+  object-fit:contain;
+}
+.main-header__navbar-brand::after{
+  content:'SMART TAX';
+  font-family:var(--st-font-display);
+  font-weight:800;
+  font-size:15px;
+  color:#fff;
+  letter-spacing:0.04em;
+  margin-left:8px;
+  white-space:nowrap;
+}
+
+/* --- Footer --- */
+.organism-footer{
+  background:var(--st-navy-900) !important;
+  color:rgba(255,255,255,0.65) !important;
+}
+.organism-footer a,
+.organism-footer p,
+.organism-footer span,
+.organism-footer li,
+.organism-footer label{
+  color:rgba(255,255,255,0.65) !important;
+}
+.organism-footer a:hover{ color:var(--st-gold-500) !important; }
+.organism-footer__logo img{
+  content:url('/assets/img/logo-mark.png');
+  height:36px !important;
+  width:36px !important;
+  object-fit:contain;
+}
+.organism-footer hr,
+.organism-footer .border-top,
+.organism-footer [class*="border"]{
+  border-color:rgba(255,255,255,0.15) !important;
+}
+
