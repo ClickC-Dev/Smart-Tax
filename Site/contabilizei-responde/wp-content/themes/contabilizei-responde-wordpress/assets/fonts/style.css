@@ -1,6 +1,6 @@
 /* latin-ext */
 @font-face {
-  font-family: "Lato";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -10,7 +10,7 @@
 }
 /* latin */
 @font-face {
-  font-family: "Lato";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -21,7 +21,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: "Lato";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -31,7 +31,7 @@
 }
 /* latin */
 @font-face {
-  font-family: "Lato";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;

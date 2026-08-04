@@ -1,0 +1,69 @@
+/* Smart Tax — design system theme overrides
+   Loaded after all page styles. Applies brand typography on top of the
+   global color swap already baked into the compiled/inline CSS. */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+  --st-navy-950:#0d181f;
+  --st-navy-900:#122029;
+  --st-navy-800:#1c2e38;
+  --st-navy-700:#24404d;
+  --st-navy-600:#31586a;
+  --st-gold-700:#8f5f34;
+  --st-gold-600:#a97c4f;
+  --st-gold-500:#c39b6c;
+  --st-font-display:'Manrope',-apple-system,'Segoe UI',sans-serif;
+  --st-font-body:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+
+body, p, span, div, a, li, td, th, input, textarea, select, button{
+  font-family:var(--st-font-body), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-family:var(--st-font-display), sans-serif !important;
+  font-weight:800 !important;
+  letter-spacing:-0.01em;
+}
+
+/* --- Component-level brand overrides ---
+   The compiled site defines its colors through several overlapping token
+   systems (--color-*, --bs-color-*) and, in places, hardcoded hex values
+   that bypass those tokens entirely. Text-level hex substitution handles
+   most of it; these rules force the remaining known button/nav components
+   to the correct brand colors regardless of which rule wins upstream. */
+
+.atom-button__button--primary{
+  background-color:var(--st-gold-600) !important;
+  border-color:var(--st-gold-600) !important;
+  color:#fff !important;
+}
+.atom-button__button--primary:hover{
+  background-color:var(--st-gold-700) !important;
+  border-color:var(--st-gold-700) !important;
+}
+.atom-button__button--secondary-outline{
+  background-color:transparent !important;
+  border-color:var(--st-navy-800) !important;
+  color:var(--st-navy-800) !important;
+}
+.atom-button__button--secondary-outline:hover{
+  background-color:var(--st-navy-800) !important;
+  color:#fff !important;
+}
+.atom-button__button--secondary,
+.atom-button__button--secondary-variant{
+  background-color:#fff !important;
+  border-color:var(--st-navy-800) !important;
+  color:var(--st-navy-800) !important;
+}
+.atom-button__button--link,
+.atom-button__button--anchor,
+.atom-button__button--menu-button{
+  color:var(--st-navy-800) !important;
+}
+
+a{ color:var(--st-navy-800); }
+a:hover{ color:var(--st-gold-700); }
+
