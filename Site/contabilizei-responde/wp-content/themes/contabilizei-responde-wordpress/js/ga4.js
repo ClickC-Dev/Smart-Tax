@@ -78,7 +78,7 @@ if ( ctaTodasAsPergutnas ) {
 	);
 }
 
-// CTA Venha para Contabilizei
+// CTA Venha para Smart Tax
 const ctaVenhaParaCtbz = document.querySelector( '.ga-dobra-reasons' );
 if ( ctaVenhaParaCtbz ) {
 	ctaVenhaParaCtbz.addEventListener( 'click', () =>

@@ -159,7 +159,7 @@ if ( accountantQuestionsLink ) {
 	} );
 }
 
-// Reasons Contabilizei CTA
+// Reasons Smart Tax CTA
 const reasonsContabilizeiCta = document.querySelectorAll('.ga-dobra-reasons');
 if (reasonsContabilizeiCta) {
 	reasonsContabilizeiCta.forEach((item) => {
