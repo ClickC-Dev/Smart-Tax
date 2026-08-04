@@ -1,0 +1,11 @@
+<!-- @dsCard group="Brand" viewport="700x150" name="Iconography" subtitle="Lucide (CDN) — thin-stroke line icons, substitution flagged" -->
+<!DOCTYPE html><html><head><link rel="stylesheet" href="../styles.css"><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script><style>body{margin:0;font-family:var(--font-body);padding:20px;color:var(--text-secondary)}#icons{display:flex;gap:18px;margin-bottom:10px}small{font-size:11px}</style></head>
+<body>
+<div id="icons"></div>
+<small>Sem fonte de ícones própria no material recebido — substituído por Lucide (stroke 1.5–2px, cantos levemente arredondados), o mais próximo de um traço fino e elegante.</small>
+<script>
+const names=['file-text','calculator','landmark','shield-check','trending-up','calendar'];
+document.getElementById('icons').innerHTML = names.map(n=>`<i data-lucide="${n}" style="width:28px;height:28px"></i>`).join('');
+lucide.createIcons();
+</script>
+</body></html>

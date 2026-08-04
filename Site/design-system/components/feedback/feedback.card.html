@@ -1,0 +1,26 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Feedback" subtitle="Dialog, Toast, Tooltip" -->
+<!DOCTYPE html><html><head><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--surface-page);font-family:var(--font-body)}#root{padding:20px;display:flex;flex-direction:column;gap:16px}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Dialog, Toast, Tooltip, Button } = window.SmartTaxDesignSystem_5b7735;
+function App(){
+  const [open,setOpen] = React.useState(false);
+  return (<>
+    <Toast tone="success">Nota fiscal enviada com sucesso.</Toast>
+    <Toast tone="warning">2 documentos pendentes de envio.</Toast>
+    <div style={{display:'flex',gap:12,alignItems:'center'}}>
+      <Button onClick={()=>setOpen(true)}>Abrir modal</Button>
+      <Tooltip label="Baixar PDF"><span style={{padding:'8px 12px',border:'1px solid var(--border-default)',borderRadius:6,cursor:'pointer'}}>⬇</span></Tooltip>
+    </div>
+    <Dialog open={open} title="Enviar declaração?" onClose={()=>setOpen(false)} actions={<><Button variant="ghost" onClick={()=>setOpen(false)}>Cancelar</Button><Button variant="gold" onClick={()=>setOpen(false)}>Confirmar</Button></>}>
+      Isso enviará sua declaração para revisão do contador.
+    </Dialog>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>
