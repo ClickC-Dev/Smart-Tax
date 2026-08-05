@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  /* navy */
+  --navy-950: #0d181f;
+  --navy-900: #122029;
+  --navy-800: #1c2e38;
+  --navy-700: #24404d;
+  --navy-600: #31586a;
+  --navy-500: #3f7188;
+
+  /* gold */
+  --gold-900: #5a3a20;
+  --gold-800: #754a28;
+  --gold-700: #8f5f34;
+  --gold-600: #a97c4f;
+  --gold-500: #c39b6c;
+  --gold-400: #d4b896;
+  --gold-300: #e3d0b6;
+  --gold-100: #f5ede0;
+
+  /* neutrals */
+  --neutral-0: #ffffff;
+  --neutral-50: #f7f6f4;
+  --neutral-100: #efece7;
+  --neutral-200: #e2ddd5;
+  --neutral-300: #c9c1b4;
+  --neutral-400: #a89d8c;
+  --neutral-500: #847968;
+  --neutral-600: #615a4d;
+  --neutral-700: #453f36;
+  --neutral-800: #2c2822;
+  --neutral-900: #1a1712;
+
+  --success-500: #3f7d5a;
+  --success-100: #e2f0e8;
+  --warning-500: #b5822c;
+  --warning-100: #f7ecd8;
+  --danger-500: #a4402f;
+  --danger-100: #f6e2de;
+
+  --surface-page: var(--neutral-50);
+  --surface-card: var(--neutral-0);
+  --surface-inverse: var(--navy-800);
+  --border-subtle: var(--neutral-200);
+  --border-default: var(--neutral-300);
+  --text-primary: var(--neutral-900);
+  --text-secondary: var(--neutral-600);
+  --text-muted: var(--neutral-500);
+  --text-inverse: var(--neutral-0);
+
+  --accent-primary: var(--navy-800);
+  --accent-primary-hover: var(--navy-900);
+  --accent-gold: var(--gold-600);
+  --accent-gold-hover: var(--gold-700);
+
+  --font-display: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  --shadow-sm: 0 1px 2px rgba(13, 24, 31, 0.06);
+  --shadow-md: 0 4px 12px rgba(13, 24, 31, 0.08);
+  --shadow-lg: 0 12px 32px rgba(13, 24, 31, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
