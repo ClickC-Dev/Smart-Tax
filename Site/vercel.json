@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/painel-adm", "destination": "https://smart-tax-painel.vercel.app/painel-adm" },
+    { "source": "/painel-adm/:path*", "destination": "https://smart-tax-painel.vercel.app/painel-adm/:path*" }
+  ]
+}
